@@ -1,0 +1,6 @@
+-- S_P_Флорин#8501
+lp = game:GetService("Players").LocalPlayer
+  lp.Character["[Boombox]"].RequiresHandle = false
+    if lp.Character["[Boombox]"]:FindFirstChild("Handle") then
+      lp.Character["[Boombox]"].Handle:Destroy()
+    end
