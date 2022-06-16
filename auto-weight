@@ -1,0 +1,19 @@
+-- S_P_Флорин#8501
+local lp = game.Players.LocalPlayer
+local OriginalPosition = nil
+getgenv().autoWeight = true
+
+if autoWeight then
+    OriginalPosition = lp.Character.HumanoidRootPart.CFrame; wait()
+    lp.Character.HumanoidRootPart.CFrame = CFrame.new(-46.71588134765625, 22.95026397705078, -656.4407958984375); wait(1)
+    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[HeavyWeights] - $250"].ClickDetector); wait(1)
+    lp.Character.HumanoidRootPart.CFrame = OriginalPosition
+end
+
+while autoWeight do
+    if not lp.Character:FindFirstChild('[HeavyWeights]') then
+        lp.Backpack:FindFirstChild('[HeavyWeights]').Parent = lp.Character
+    end
+    lp.Character:FindFirstChild('[HeavyWeights]'):Activate()
+    wait(.3)
+end
