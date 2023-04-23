@@ -1,4 +1,3 @@
--- S_P_Флорин#8501
 local lp = game.Players.LocalPlayer
 local OriginalPosition = nil
 getgenv().autoWeight = true
@@ -6,7 +5,7 @@ getgenv().autoWeight = true
 if autoWeight then
     OriginalPosition = lp.Character.HumanoidRootPart.CFrame; wait()
     lp.Character.HumanoidRootPart.CFrame = CFrame.new(-46.71588134765625, 22.95026397705078, -656.4407958984375); wait(1)
-    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[HeavyWeights] - $250"].ClickDetector); wait(1)
+    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[HeavyWeights] - $258"].ClickDetector); wait(1)
     lp.Character.HumanoidRootPart.CFrame = OriginalPosition
 end
 
